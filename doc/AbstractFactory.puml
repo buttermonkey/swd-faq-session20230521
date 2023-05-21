@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface WidgetFactory {
+    Button createButton()
+    Label createLabel()
+}
+
+class WindowsWidgetFactory implements WidgetFactory {
+    Button createButton()
+    Label createLabel()
+}
+note left of WindowsWidgetFactory: Only knows about\nWindows widgets
+
+class MacosWidgetFactory implements WidgetFactory {
+    Button createButton()
+    Label createLabel()
+}
+note right of MacosWidgetFactory: Only knows about\nMacOS widgets
+
+@enduml

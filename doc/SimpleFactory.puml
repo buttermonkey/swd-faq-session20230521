@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class WidgetFactory {
+    Button createButton()
+    Label createLabel()
+}
+
+@enduml

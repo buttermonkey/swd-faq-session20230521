@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package "High Level" {
+    class PopulationAnalyzer
+}
+
+package "Low Level" {
+    class PopulationDatabase
+}
+
+PopulationAnalyzer --> PopulationDatabase
+
+@enduml

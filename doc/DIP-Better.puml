@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package "High Level" {
+    class PopulationAnalyzer
+}
+
+package "Low Level" {
+    interface IPopulationProvider
+    class PopulationDatabase implements IPopulationProvider
+}
+
+PopulationAnalyzer --> IPopulationProvider
+
+@enduml
